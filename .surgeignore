@@ -1,0 +1,8 @@
+!dist/
+src/
+!src/banks.json
+templates/
+gulpfile.js
+package.json
+prepros.cfg
+README.md
