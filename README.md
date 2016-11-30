@@ -6,7 +6,7 @@ All bank icons are trademarks of their respective owners and the use of these tr
 
 ## [Demo & Download](https://thai-bank-logos-icon-font.surge.sh/)
 
-![mockup-888px](https://cloud.githubusercontent.com/assets/1778633/20764555/43a5a778-b761-11e6-81b7-2783be298ba7.jpg)
+[![mockup-888px](https://cloud.githubusercontent.com/assets/1778633/20764555/43a5a778-b761-11e6-81b7-2783be298ba7.jpg)](https://thai-bank-logos-icon-font.surge.sh/)
 
 ### Usage
 
