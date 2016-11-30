@@ -34,6 +34,11 @@ $(function () {
 		$('#stylesheet_code code').text($('#stylesheet')[0].outerHTML);
 
 		// Add code sample
+		$('#demo i').hover(function () {
+			$('#code').val(this.outerHTML);
+		}, function () {
+			$('#code').val('');
+		});
 		$('#demo').on('click', '.thbanks', function (event) {
 			event.preventDefault();
 			$('#code').val(this.outerHTML).focus().select();
