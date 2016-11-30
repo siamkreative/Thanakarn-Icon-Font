@@ -106,5 +106,5 @@ jspm_packages
 
 ### Custom ###
 prepros.cfg
-./dist/
-./src/
+dist/
+src/
