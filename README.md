@@ -21,3 +21,11 @@ Then use icons like this
 ```html
 <i class="thbanks thbanks-scb" aria-hidden="true"></i>
 ```
+
+### Contributing to this project
+
+It is very easy to help making this project better. You need to:
+
+1. Fork the repository 
+2. Run `npm install`
+3. Run `npm start`
