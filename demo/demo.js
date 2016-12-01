@@ -35,9 +35,8 @@ $(function () {
 
 		// Add code sample
 		$('#demo i').hover(function () {
+			$(this).addClass('active').siblings().removeClass('active');
 			$('#code').val(this.outerHTML);
-		}, function () {
-			$('#code').val('');
 		});
 		$('#demo').on('click', '.thbanks', function (event) {
 			event.preventDefault();

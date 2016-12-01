@@ -25,12 +25,19 @@ a.pure-button-selected {
 	margin: 0 20px 20px 0;
 	border-radius: 3px;
 	cursor: pointer;
+	border: 3px solid transparent;
+	transition: border-color 300ms ease-out;
 }
 
 #demo .thbanks:before {
 	color: white;
 	padding: 10px;
 	font-size: 2em;
+}
+
+#demo .thbanks:hover,
+#demo .thbanks.active {
+	border-color: black;
 }
 
 #result {
