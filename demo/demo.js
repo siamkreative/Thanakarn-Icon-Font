@@ -18,7 +18,7 @@ $(function () {
 		$.each(json.th, function (index, val) {
 			count++;
 			classname = prefix + index;
-			html += '<i class="thbanks ' + classname + '" aria-hidden="true"></i>';
+			html += '<li class="hint--top" aria-label="' + val.nice_name + '"><i class="thbanks ' + classname + '" aria-hidden="true"></i></li>';
 		});
 
 		// Add CSS & HTML
@@ -34,13 +34,10 @@ $(function () {
 		$('#stylesheet_code code').text($('#stylesheet')[0].outerHTML);
 
 		// Add code sample
-		$('#demo i').hover(function () {
-			$(this).addClass('active').siblings().removeClass('active');
-			$('#code').val(this.outerHTML);
-		});
 		$('#demo').on('click', '.thbanks', function (event) {
 			event.preventDefault();
 			$('#code').val(this.outerHTML).focus().select();
+			$(this).parent('li').addClass('active').siblings().removeClass('active');
 
 			// Copy to clipboard
 			try {
