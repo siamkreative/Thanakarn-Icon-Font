@@ -27,9 +27,6 @@ $(function () {
 		// Update count
 		$('#count').text(count);
 
-		// Add stylesheet URL for download
-		$('#download_btn').attr('href', $('#stylesheet').attr('href'));
-
 		// Update usage code
 		$('#stylesheet_code code').text($('#stylesheet')[0].outerHTML);
 
