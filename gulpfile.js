@@ -8,6 +8,7 @@ var concat = require('gulp-concat');
 var cleanCSS = require('gulp-clean-css');
 var fs = require('fs');
 var browserSync = require('browser-sync').create();
+var zip = require('gulp-zip');
 
 gulp.task('getsrc', function () {
 	download('https://github.com/omise/banks-logo/archive/master.zip')
@@ -68,6 +69,12 @@ gulp.task('serve', function() {
 		}
 	});
 	gulp.watch('index.html').on('change', browserSync.reload);
+});
+
+gulp.task('zip', function() {
+	gulp.src(['dist/**', '!dist/thbank-font.zip'])
+		.pipe(zip('thbank-font.zip'))
+        .pipe(gulp.dest('dist'));
 });
 
 gulp.task('default', [], function () {
