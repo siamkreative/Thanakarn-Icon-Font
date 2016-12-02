@@ -5,6 +5,7 @@
   "main": "gulpfile.js",
   "dependencies": {
     "async": "^2.1.4",
+    "browser-sync": "^2.18.2",
     "fs": "0.0.1-security",
     "gulp": "^3.9.1",
     "gulp-clean-css": "^2.0.13",

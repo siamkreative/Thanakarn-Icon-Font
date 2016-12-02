@@ -7,6 +7,7 @@ var consolidate = require('gulp-consolidate');
 var concat = require('gulp-concat');
 var cleanCSS = require('gulp-clean-css');
 var fs = require('fs');
+var browserSync = require('browser-sync').create();
 
 gulp.task('getsrc', function () {
 	download('https://github.com/omise/banks-logo/archive/master.zip')
@@ -58,6 +59,15 @@ gulp.task('genFontsCSS', function (done) {
 				.on('finish', cb);
 		}
 	], done);
+});
+
+gulp.task('serve', function() {
+    browserSync.init({
+        server: {
+            baseDir: './'
+        }
+    });
+    gulp.watch('index.html').on('change', browserSync.reload);
 });
 
 gulp.task('default', [], function () {
