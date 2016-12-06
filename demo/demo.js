@@ -7,7 +7,7 @@ $(function () {
 	/**
 	 * Generate CSS and HTML
 	 */
-	$.getJSON('/src/banks.json', function (json, textStatus) {
+	$.getJSON('src/banks.json', function (json, textStatus) {
 		var css = '';
 		var classname;
 		var prefix = 'thbanks-';
