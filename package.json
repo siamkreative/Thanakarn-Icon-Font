@@ -21,6 +21,6 @@
     "test": "echo \"Error: no test specified\" && exit 1",
     "start": "gulp getsrc && gulp genFontsCSS && gulp genColors && gulp"
   },
-  "author": "Julien Vernet <julien@vwernet.me>",
+  "author": "Julien Vernet <julien@vernet.me>",
   "license": "ISC"
 }
