@@ -108,3 +108,4 @@ jspm_packages
 prepros.cfg
 dist/
 src/
+.idea/

@@ -7,7 +7,7 @@ $(function () {
 	/**
 	 * Generate CSS and HTML
 	 */
-	$.getJSON('src/banks.json', function (json, textStatus) {
+	$.getJSON('/banks.json', function (json, textStatus) {
 		var css = '';
 		var classname;
 		var prefix = 'thbanks-';
@@ -26,9 +26,6 @@ $(function () {
 
 		// Update count
 		$('#count').text(count);
-
-		// Update usage code
-		$('#stylesheet_code code').text($('#stylesheet')[0].outerHTML);
 
 		// Add code sample
 		$('#demo').on('click', '.thbanks', function (event) {
