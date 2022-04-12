@@ -4,7 +4,7 @@
   "description": "Ready to use icon font with all Banks in Thailand",
   "main": "gulpfile.js",
   "dependencies": {
-    "async": "^2.1.4",
+    "async": "^3.2.2",
     "browser-sync": "^2.18.2",
     "fs": "0.0.1-security",
     "gulp": "^3.9.1",
